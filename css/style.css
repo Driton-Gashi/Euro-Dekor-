@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto Mono';
+}
+body{
+    scroll-behavior: smooth;
+}
+header{
+   
+    min-height: 70px;
+}
+header a{
+    text-decoration: none;
+}
+header .logo{
+    display: inline-block;
+    padding: 15px;
+    float: left;
+}
+header .logo h2{
+    font-size: 30px;
+    display: inline-block;
+    color: white;
+}
+header .logo img{
+    width: 50px;
+    display: inline-block;
+    margin: -10px 5px 0 6px;
+    filter: contrast(180%);
+}
+header ul{
+    display: inline-block;
+    float: right;
+}
+header ul a{
+    text-decoration: none;
+}
+header ul a li{
+    list-style-type: none;
+    color: white;
+    font-size: 18px;
+    display: inline-block;
+    padding:25px 15px;
+    transition: .6s ease color;
+}
+header ul a li::after{
+    content: "";
+    display: block;
+    background-color:#f4623a ;
+    width: 0%;
+    height: 3px;
+    margin: auto;
+    transition: .6s ease;
+    border-radius: 10%;
+
+}
+header ul a li:hover{
+    color: #f4623a;
+}
+header ul a li:hover::after{
+    width: 100%;
+}
+
+.main{
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/first-page.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.center{
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+}
+.center h1{
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.center a{
+    color: white;
+    border: 2px solid white;
+    position: relative;
+    top: -40px;
+    padding: 25px 35px;
+    cursor: pointer;
+    transition: 1s ease ;
+    border-radius: 40px;
+    animation: myanimation 8s infinite;
+}
+.center a:hover{
+    border-color: #f4623a;
+    color: #f4623a;
+}
+.center h3{
+    padding: 15px;
+    font-size: 35px;
+    padding-top: 0;
+}
+.divider{
+    width: 5rem;
+    margin: auto;
+    border: 2px solid #f4623a;
+    opacity: 1;
+    background-color: #f4623a;
+    
+}
+.divider-white{
+    width: 5rem;
+    margin: auto;
+    border: 2px solid #fff;
+    opacity: 1;
+    background-color: #fff;
+}
+.center p{
+    padding: 20px;
+}
+.close{
+    display: none;
+    transition: 1s ease all;
+
+}
+.burger{
+    display: none;
+    transition: 1s ease all;
+
+}
+.details{
+    text-align: center;
+}
+.details h1{
+    text-transform: capitalize;
+    
+}
+.details div span i{
+    font-size: 80px;
+    color: #f4623a;
+}
+.details h1{
+
+    padding: 20px;
+}
+.details div.rreshti1{
+    margin-top: 30px;
+
+}
+
+.details div span{
+    padding: 20px;
+    /* border: 1px solid black; */
+    transition: .6s ease all;
+    cursor: pointer;
+}
+.details div span:hover{
+    /* box-shadow: rgba( 244, 98, 58, 0.5) 0px 5px 15px; */
+    box-shadow: rgba( 0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.details div span h3{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.details div span p{
+    text-transform: capitalize;
+    font-size: 17px;
+}
+#rreth-nesh{
+    background-color: #f4623a;
+    color: white;
+    padding: 80px 0;
+    box-shadow: rgba( 0, 0, 0, 0.35) 0px 5px 15px;
+}
+#rreth-nesh h2{
+    text-align: center;
+    font-size: 40px;
+    /* padding-top: 80px; */
+    padding-bottom: 20px;
+}
+#rreth-nesh p{
+    opacity: 0.7;
+   text-align: center;
+   font-size: 15px;
+   padding: 0 15px;
+}
+#rreth-nesh p:first-child{
+    padding-top: 20px;
+}
+.text-wrap{
+    width: 50%;
+    margin: auto;
+}
+
+@keyframes myanimation{
+    0%{
+        border-color: white;
+        color: white;
+    }
+    25%{
+        border-color: blueviolet;
+        color: blueviolet;
+    }
+    50%{
+        border-color:crimson;
+        color: crimson;
+    }
+    75%{
+        border-color: green;
+        color: green;
+    }
+    100%{
+        border-color:#fff;
+        color: #fff;
+    }
+}
+
+@media(max-width:1000px){
+header .logo h2{
+    font-size: 25px;
+}
+header .logo img{
+    width: 45px;
+    padding: 0;
+    margin: 0;
+}
+header ul a li{
+    padding: 20px 5px;
+    font-size: 16px;
+}
+header ul {
+    padding: 0;
+}
+
+@media(max-width:768px){
+    .text-wrap{
+        width: 100%;
+    }
+    .close{
+        display: block;
+        width: 35px;
+        color: white;
+        margin: 35px;
+        color: #f4623a;
+    }
+    .burger{
+        display: block;
+        float: right;
+        font-size: 50px;
+        color: white;
+    }
+    header .logo h2{
+        font-size: 35px;
+    }
+    header .logo img{
+        width: 55px;
+        position: relative;
+        top: -6px;
+    }
+    header ul {
+        position: fixed;
+        width: 55%;
+        background-color: #363636;
+        height: 100vh;
+        top: -100vh;
+        right: 0;
+        z-index: 2;
+        border-radius: 35px 0 0 0;
+        transition: 1s ease all;
+    }
+    header ul a li{
+        display: block;
+        font-size: 28px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .center{
+        width: 100%;
+
+    }
+    .center h3{
+        padding: 10px;
+    }
+}
+@media(max-width:468px){
+    header .logo h2{
+        font-size: 25px;
+    }
+    header .logo img{
+        width: 40px;
+        filter: contrast(180%);
+        top: -5px;
+    }
+    .burger{
+        font-size: 38px;
+    }
+    .center{
+        top: 60%;
+    }
+    .center h1{
+        font-size: 40px;
+        padding: 0;
+        margin: 0;
+    }
+    .center h3{
+        font-size: 22px;
+    }
+    .center p{
+        font-size: 14px;
+    }
+    .close{
+        padding: 5px;
+        margin: 20px 0 20px 15px;
+    }
+    header ul a li{
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        right: -10px;
+    }
+    header ul a li:hover::after{
+        width: 80%;
+    }
+}}
