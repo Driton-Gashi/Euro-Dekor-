@@ -133,6 +133,7 @@ header ul a li:hover::after{
 }
 .details{
     text-align: center;
+    padding-bottom: 80px;
 }
 .details h1{
     text-transform: capitalize;
@@ -143,8 +144,7 @@ header ul a li:hover::after{
     color: #f4623a;
 }
 .details h1{
-
-    padding: 20px;
+    padding: 60px 0 20px 0;
 }
 .details div.rreshti1{
     margin-top: 30px;
@@ -152,10 +152,10 @@ header ul a li:hover::after{
 }
 
 .details div span{
-    padding: 20px;
     /* border: 1px solid black; */
     transition: .6s ease all;
     cursor: pointer;
+    padding: 20px;
 }
 .details div span:hover{
     /* box-shadow: rgba( 244, 98, 58, 0.5) 0px 5px 15px; */
@@ -196,6 +196,128 @@ header ul a li:hover::after{
     margin: auto;
 }
 
+.portofolio .row{
+    --bs-gutter-x: 0!important;
+
+}
+.portofolio{
+    
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+.image{
+    height: 280px;
+    background-repeat:no-repeat!important;
+    background-size: cover!important;
+    background-position: bottom!important;
+    padding: 0px!important;
+    filter: contrast(120%);
+    transition: 0.4s ease ;
+    cursor: pointer;
+}
+
+.bg1{
+    background: url(../img/1.jpg);
+
+}
+.bg1:hover{
+     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/1.jpg);
+}
+.bg2{
+    background: url(../img/2.jpg);
+
+}
+.bg2:hover{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/2.jpg);
+}
+.bg3{
+    background: url(../img/3.jpg);
+
+}
+.bg3:hover{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/3.jpg);
+}
+.bg4{
+    background: url(../img/4.jpg);
+
+}
+.bg4:hover{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/4.jpg);
+}
+.bg5{
+    background: url(../img/5.jpg);
+
+}
+.bg5:hover{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/5.jpg);
+}
+.bg6{
+    background: url(../img/6.jpg);
+
+}
+.bg6:hover{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/6.jpg);
+}
+
+.portofolio div span h2{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition:  0.4s ease all;
+    display: inline-block;
+}
+
+#kontakti{
+    text-align: center;
+}
+#kontakti h1{
+    padding: 30px 0 20px 0;
+}
+#kontakti p{
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+    
+}
+#kontakti div  {
+    padding: 20px;
+}
+#kontakti div span i{
+    font-size: 60px;
+    
+}
+#kontakti div span a{
+    padding: 5px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+#kontakti .row{
+    --bs-gutter-x:0;
+}
+
+footer{
+    text-align: center;
+    background-color: #fafafa;
+    color: black;
+    padding: 35px;  
+    font-size: 14px;  
+}
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    font-size: 50px; /* Increase font size */
+  }
 @keyframes myanimation{
     0%{
         border-color: white;
@@ -236,7 +358,11 @@ header ul {
     padding: 0;
 }
 
+}
 @media(max-width:768px){
+    #myBtn{
+        font-size: 65px;
+    }
     .text-wrap{
         width: 100%;
     }
@@ -285,6 +411,15 @@ header ul {
     .center h3{
         padding: 10px;
     }
+    .image{
+        height: 325px;
+    }
+    #kontakti p{
+        width: 100%;
+    }
+    .portofolio div span{
+        height: 380px;
+    }
 }
 @media(max-width:468px){
     header .logo h2{
@@ -326,4 +461,14 @@ header ul {
     header ul a li:hover::after{
         width: 80%;
     }
-}}
+    .image{
+        height: 250px;
+        background-size: cover!important;
+    }
+    .details div span{
+        padding: 0;
+    }
+    .portofolio div span{
+        height: 250px;
+    }
+}
